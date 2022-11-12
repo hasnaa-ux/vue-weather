@@ -1,17 +1,28 @@
 <template>
   <main>
-    <p>hello</p>
+    <entering-value></entering-value>
   </main>
 </template>
 
 <script>
+import EnteringValue from "./components/EnteringValue.vue";
 export default {
-  components: {},
+  components: { EnteringValue },
   data() {
     return {
-      api_key: "893e4e2c9ea095ec2eeb47515bcfb300",
+     
     };
   },
 };
 </script>
-<style scoped></style>
+<style>
+#app {
+  background-image: url('./images/back1.jfif');
+  background-size: cover;
+}
+main {
+  height: 100vh;
+  padding: 20px;
+  background-image: linear-gradient(to bottom,  #0000005e,#000000de)
+}
+</style>
